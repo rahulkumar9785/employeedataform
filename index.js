@@ -1,10 +1,8 @@
-import addReducer from "./addReducer";
-import { combineReducers } from "redux";
-
-const rootReducer = combineReducers(
-    {
-        addReducer
-    }
-);
-
-export default rootReducer;
+export const addUser = (data) => {
+    return {
+        type: 'addtolist',
+        payload: {
+            data: data,
+        },
+    };
+};
